@@ -21,7 +21,7 @@ const App = () => {
 
     try {
       const resp = await axios.get(
-        `http://127.0.0.1:3003/api/v1/clima?city=${city}`
+        `/api/v1/clima?city=${city}`
       );
 
       if (!resp.data.success) {

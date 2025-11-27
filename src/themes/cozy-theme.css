@@ -1,0 +1,173 @@
+/* === COZY DARK SOFT THEME – COMPLETO Y OPTIMIZADO === */
+
+:root {
+  --cozy-bg: #332f2a;          /* Fondo general */
+  --cozy-card: #2a2624;        /* Paneles, inputs, cards */
+  --cozy-card-master: #50433b;
+  --cozy-primary: #d4a373;     /* Dorado suave */
+  --cozy-secondary: #3b332f;   /* Bordes suaves */
+  --cozy-text: #e9e3dd;        /* Texto principal */
+  --cozy-muted: #b8afa6;       /* Placeholder, texto tenue */
+  --cozy-radius: 16px;         /* Redondeado general */
+  --cozy-shadow: 0 4px 18px rgba(0,0,0,0.35); /* Shadow general */
+  --cozy-shadow-deep: 0 8px 24px rgba(0,0,0,0.45); /* Para cards más fuertes */
+  --cozy-font: "Quicksand", "Poppins", sans-serif;
+}
+
+/* === Fondo general === */
+body {
+  background-color: var(--cozy-bg) !important;
+  font-family: var(--cozy-font) !important;
+  margin: 0;
+  color: var(--cozy-text);
+  padding-bottom: 40px;
+}
+
+/* === Contenedores (incluye bootstrap .container) === */
+.container {
+  background: none !important; /* Para no oscurecer contenedor */
+  padding-top: 20px;
+}
+.badge-cozy {
+  background-color: var(--cozy-primary) !important;
+  color: #1b1816 !important;
+  box-shadow: var(--cozy-shadow);
+  border: none;
+}
+
+/* === Tarjetas === */
+.card,
+.cozy-card {
+  background-color: var(--cozy-card) !important;
+  border: none !important;
+  border-radius: var(--cozy-radius) !important;
+  box-shadow: var(--cozy-shadow-deep);
+  padding: 20px;
+}
+
+.cozy-card-master {
+  background-color: var(--cozy-card-master) !important;
+  border: none !important;
+  border-radius: var(--cozy-radius) !important;
+  box-shadow: var(--cozy-shadow-deep);
+  padding: 20px;
+}
+
+/* === Inputs === */
+.form-control {
+  border-radius: var(--cozy-radius) !important;
+  background-color: var(--cozy-card) !important;
+  border: 2px solid var(--cozy-secondary) !important;
+  color: var(--cozy-text) !important;
+  padding: 12px 14px;
+}
+
+.form-control:focus {
+  border-color: var(--cozy-primary) !important;
+  box-shadow: 0 0 6px var(--cozy-primary) !important;
+  background-color: var(--cozy-card) !important;
+  color: var(--cozy-text) !important;
+}
+
+.form-control::placeholder {
+  color: var(--cozy-muted) !important;
+}
+
+/* === Input group (botón + input alineados) === */
+.input-group {
+  background-color: transparent !important;
+  border-radius: var(--cozy-radius) !important;
+  box-shadow: none !important;
+}
+
+/* ==== Botones === */
+.btn-primary {
+  background-color: var(--cozy-primary) !important;
+  border: none !important;
+  color: #1b1816 !important; /* Contraste */
+  padding: 10px 18px;
+  font-weight: 600;
+  border-radius: var(--cozy-radius) !important;
+  box-shadow: var(--cozy-shadow);
+}
+
+.btn-primary:hover {
+  background-color: #c8924f !important; /* Dorado más cálido */
+}
+
+.btn-primary:active {
+  background-color: #b78547 !important;
+}
+
+/* === Títulos === */
+h1, h2, h3, h4 {
+  color: var(--cozy-primary) !important;
+  font-weight: 700 !important;
+}
+
+/* === Alerts === */
+.alert {
+  border-radius: var(--cozy-radius) !important;
+  border: none !important;
+  padding: 15px 18px;
+}
+
+.alert-danger {
+  background-color: #5c2e2e !important;
+  color: #f5d0d0 !important;
+  box-shadow: var(--cozy-shadow);
+}
+
+/* === Scrollbar (detallito aesthetic) === */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #1b1816;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--cozy-secondary);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--cozy-primary);
+}
+
+/* === Transiciones globales === */
+* {
+  transition: all 0.25s ease-in-out;
+}
+
+/* === Cozy – Correcciones para tus componentes === */
+
+/* Sobrescribir azul de Bootstrap */
+.text-primary {
+  color: var(--cozy-primary) !important;
+}
+
+/* Muted más legible */
+.text-muted {
+  color: var(--cozy-muted) !important;
+}
+
+/* Cards del proyecto */
+.card,
+.cozy-card {
+  background-color: var(--cozy-card) !important;
+  border: none !important;
+  border-radius: var(--cozy-radius) !important;
+  box-shadow: var(--cozy-shadow-deep);
+  padding: 20px;
+}
+
+/* Badge personalizado */
+.badge-cozy {
+  background-color: var(--cozy-primary) !important;
+  color: #1b1816 !important;
+  border-radius: var(--cozy-radius);
+  padding: 6px 10px;
+  box-shadow: var(--cozy-shadow);
+}

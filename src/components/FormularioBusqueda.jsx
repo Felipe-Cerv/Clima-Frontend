@@ -17,7 +17,7 @@ const FormularioBusqueda = ({ city, setCity, onSearch, loading }) => {
                     id="cityInput"
                     type="text"
                     className="form-control"
-                    placeholder="Ej: Tokio, Madrid, Culiacán..."
+                    placeholder="Ej: Culiacán, Los Mochis, Mazatlán..."
                     value={city}
                     onChange={(e) => setCity(e.target.value)}
                     required
